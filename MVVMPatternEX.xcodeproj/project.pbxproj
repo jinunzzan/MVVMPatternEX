@@ -14,6 +14,11 @@
 		59EDA01B2A1DD6CD00CFEB7B /* MVVMPatternEX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA0192A1DD6CD00CFEB7B /* MVVMPatternEX.xcdatamodeld */; };
 		59EDA01D2A1DD6CD00CFEB7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59EDA01C2A1DD6CD00CFEB7B /* Assets.xcassets */; };
 		59EDA0202A1DD6CD00CFEB7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59EDA01E2A1DD6CD00CFEB7B /* LaunchScreen.storyboard */; };
+		59EDA0292A1DD78700CFEB7B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA0282A1DD78700CFEB7B /* Article.swift */; };
+		59EDA02C2A1DD83400CFEB7B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA02B2A1DD83400CFEB7B /* WebService.swift */; };
+		59EDA02F2A1DD92200CFEB7B /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA02E2A1DD92200CFEB7B /* ArticleListViewModel.swift */; };
+		59EDA0322A1DDD6B00CFEB7B /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA0312A1DDD6B00CFEB7B /* ArticleTableViewCell.swift */; };
+		59EDA0352A1DDD7E00CFEB7B /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EDA0342A1DDD7E00CFEB7B /* NewsListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		59EDA01C2A1DD6CD00CFEB7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59EDA01F2A1DD6CD00CFEB7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59EDA0212A1DD6CD00CFEB7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59EDA0282A1DD78700CFEB7B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		59EDA02B2A1DD83400CFEB7B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		59EDA02E2A1DD92200CFEB7B /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		59EDA0312A1DDD6B00CFEB7B /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		59EDA0342A1DDD7E00CFEB7B /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,11 @@
 		59EDA00F2A1DD6CD00CFEB7B /* MVVMPatternEX */ = {
 			isa = PBXGroup;
 			children = (
+				59EDA0332A1DDD7100CFEB7B /* Controllers */,
+				59EDA0302A1DDD5600CFEB7B /* Cells */,
+				59EDA02D2A1DD90C00CFEB7B /* ViewModels */,
+				59EDA02A2A1DD82500CFEB7B /* Services */,
+				59EDA0272A1DD77D00CFEB7B /* Models */,
 				59EDA0102A1DD6CD00CFEB7B /* AppDelegate.swift */,
 				59EDA0122A1DD6CD00CFEB7B /* SceneDelegate.swift */,
 				59EDA0142A1DD6CD00CFEB7B /* ViewController.swift */,
@@ -68,6 +83,46 @@
 				59EDA0192A1DD6CD00CFEB7B /* MVVMPatternEX.xcdatamodeld */,
 			);
 			path = MVVMPatternEX;
+			sourceTree = "<group>";
+		};
+		59EDA0272A1DD77D00CFEB7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59EDA0282A1DD78700CFEB7B /* Article.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		59EDA02A2A1DD82500CFEB7B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59EDA02B2A1DD83400CFEB7B /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		59EDA02D2A1DD90C00CFEB7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				59EDA02E2A1DD92200CFEB7B /* ArticleListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		59EDA0302A1DDD5600CFEB7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59EDA0312A1DDD6B00CFEB7B /* ArticleTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		59EDA0332A1DDD7100CFEB7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59EDA0342A1DDD7E00CFEB7B /* NewsListTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59EDA02C2A1DD83400CFEB7B /* WebService.swift in Sources */,
 				59EDA0152A1DD6CD00CFEB7B /* ViewController.swift in Sources */,
 				59EDA0112A1DD6CD00CFEB7B /* AppDelegate.swift in Sources */,
 				59EDA0132A1DD6CD00CFEB7B /* SceneDelegate.swift in Sources */,
+				59EDA0352A1DDD7E00CFEB7B /* NewsListTableViewController.swift in Sources */,
+				59EDA0322A1DDD6B00CFEB7B /* ArticleTableViewCell.swift in Sources */,
 				59EDA01B2A1DD6CD00CFEB7B /* MVVMPatternEX.xcdatamodeld in Sources */,
+				59EDA0292A1DD78700CFEB7B /* Article.swift in Sources */,
+				59EDA02F2A1DD92200CFEB7B /* ArticleListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
